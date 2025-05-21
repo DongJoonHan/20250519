@@ -1,5 +1,30 @@
 # 20250519
 
+# 파일 체크섬 확인
+```sh
+certutil -hashfile [파일명] SHA256|MD5
+```
+
+예제
+```
+certutil -hashfile readme.txt SHA256
+```
+
+# PICT 페어와이즈 조합 사용
+## 다운로드
+https://github.com/microsoft/pict/releases/download/v3.7.4/pict.exe
+
+## 기본 명령
+1. 엑셀 출력하는 경우
+```
+pict data.txt > r.xls
+```
+
+2. 전수 테스트 조합 만드는 경우
+```
+pict data.txt /o:max > r2.xls
+```
+
 # 다운로드 위치
 - Jenkins: https://www.jenkins.io/download/  에서 LTS Windows 버전
 - OepnJDK: https://github.com/ojdkbuild/ojdkbuild  에서 17버전
